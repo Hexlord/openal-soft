@@ -29,8 +29,6 @@ endif()
 
 project(OpenAL)
 
-SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${A1_COOKED_BUILD}")
-
 if(COMMAND CMAKE_POLICY)
     cmake_policy(SET CMP0003 NEW)
     cmake_policy(SET CMP0005 NEW)
