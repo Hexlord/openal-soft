@@ -476,7 +476,7 @@ if(WIN32)
     set(C_FLAGS ${C_FLAGS} -femulated-tls)
     set(LINKER_FLAGS ${LINKER_FLAGS} -femulated-tls)
 endif()
-option(ALSOFT_REQUIRE_PTHREAD "Require pthread linkage" ON)
+option(ALSOFT_REQUIRE_PTHREAD "Require pthread linkage" OFF)
 if((NOT WIN32) OR ALSOFT_REQUIRE_PTHREAD)
     # We need pthreads outside of Windows, for semaphores. It's also used to
     # set the priority and name of threads, when possible.
